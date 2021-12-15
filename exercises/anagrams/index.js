@@ -18,30 +18,4 @@ function cleanStr(str){
 }
 
 module.exports = anagrams;
-//Solution 1
-// function anagrams(stringA, stringB) {
-//     let aWord = buildCharMap(stringA);
-//     let bWord = buildCharMap(stringB);
 
-//     if (Object.keys(aWord).length !== Object.keys(bWord).length){
-//         return false;
-//     }
-
-//     for(let char in aWord){
-//         if(aWord[char] !== bWord[char]){
-//             return false;
-//         }
-//     }    
-//     return true;
-
-// }
-
-// function buildCharMap(str){
-//     let charMap = {};
-    
-//     for(let char of str.replace(/[^\w]/g).toLowerCase()){
-//         charMap[char] = charMap[char] + 1 || 1;
-//     }
-
-//     return charMap;
-// }
